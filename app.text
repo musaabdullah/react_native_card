@@ -1,0 +1,102 @@
+  <ScrollView style={styles.container}>
+      <View style={styles.viewContainer}>
+        <View style={styles.ViewShadow}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <Text style={{fontSize: 17, color: 'black', fontWeight: 'bold'}}>
+              Title about something important here
+            </Text>
+            <Text>Views</Text>
+          </View>
+          <View style={{marginTop: 24}}>
+            <Text style={{textAlign: 'justify'}}>
+              Irure commodo ad mollit et proident cupidatat qui do ipsum
+              adipisicing laboris Lorem. Anim quis anim excepteur consequat quis
+              proident nisi. Eu reprehenderit occaecat ut laboris non ea aliquip
+              ad. Incididunt culpa officia ad qui anim minim. Sint ipsum
+              consectetur incididunt aute reprehenderit magna ullamco mollit et
+              cillum voluptate.
+            </Text>
+          </View>
+        </View>
+        <View style={styles.ViewShadow}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <Text style={{fontSize: 17, color: 'black', fontWeight: 'bold'}}>
+              Title about something important here
+            </Text>
+            <Text>Views</Text>
+          </View>
+          <View style={{marginTop: 24}}>
+            <Text style={{textAlign: 'justify'}}>
+              Irure commodo ad mollit et proident cupidatat qui do ipsum
+              adipisicing laboris Lorem. Anim quis anim excepteur consequat quis
+              proident nisi. Eu reprehenderit occaecat ut laboris non ea aliquip
+              ad. Incididunt culpa officia ad qui anim minim. Sint ipsum
+              consectetur incididunt aute reprehenderit magna ullamco mollit et
+              cillum voluptate.
+            </Text>
+          </View>
+        </View>
+        <View style={styles.ViewShadow}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <Text style={{fontSize: 17, color: 'black', fontWeight: 'bold'}}>
+              Title about something important here
+            </Text>
+            <Text>Views</Text>
+          </View>
+          <View style={{marginTop: 24}}>
+            <Text style={{textAlign: 'justify'}}>
+              Irure commodo ad mollit et proident cupidatat qui do ipsum
+              adipisicing laboris Lorem. Anim quis anim excepteur consequat quis
+              proident nisi. Eu reprehenderit occaecat ut laboris non ea aliquip
+              ad. Incididunt culpa officia ad qui anim minim. Sint ipsum
+              consectetur incididunt aute reprehenderit magna ullamco mollit et
+              cillum voluptate.
+            </Text>
+          </View>
+        </View>
+
+        <View style={styles.ViewShadow}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+            }}>
+            <Text
+              style={{
+                fontSize: 17,
+                color: 'black',
+                fontWeight: 'bold',
+              }}>
+              Title about something important here
+            </Text>
+            <Text>Views</Text>
+          </View>
+          <View style={{marginTop: 24}}>
+            <Text style={{textAlign: 'justify'}}>
+              Irure commodo ad mollit et proident cupidatat qui do ipsum
+              adipisicing laboris Lorem. Anim quis anim excepteur consequat quis
+              proident nisi. Eu reprehenderit occaecat ut laboris non ea aliquip
+              ad. Incididunt culpa officia ad qui anim minim. Sint ipsum
+              consectetur incididunt aute reprehenderit magna ullamco mollit et
+              cillum voluptate.
+            </Text>
+          </View>
+        </View>
+      </View>
+    </ScrollView>
