@@ -13,6 +13,7 @@
     "loadsh": "^0.0.4",
     "react": "17.0.2",
     "react-native": "0.66.4",
+    "react-native-card-animated-modal": "^1.0.3",
     "react-native-gesture-handler": "^2.1.0",
     "react-native-html-to-pdf": "^0.12.0",
     "react-native-material-cards": "^1.0.16",

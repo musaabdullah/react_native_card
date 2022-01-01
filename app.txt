@@ -74,7 +74,7 @@
           <View
             style={{
               flexDirection: 'row',
-              alignItems: 'center',
+              alignItems: 'center', 
               justifyContent: 'space-between',
             }}>
             <Text
