@@ -1,0 +1,23 @@
+export default {
+  success: "#1abc9c",
+  danger: "#e74c3c",
+  info: "#9B1560",
+  primary: "#ddab52",
+  subPrimary:"#A77721",
+  secondary: "#EB0085",
+  dark: "#4d4d4d",
+  warning: "#f39c12",
+  light: "#f4f4f4",
+  white:"#fff",
+  black:"#000",
+  gray: "#EEE",
+  lightGray:"#707070",
+  grayText: "#4d4d4d",
+  facebook: "#3b5999",
+  google: "#dd4b39",
+  twitter: "#55acee",
+  white: "#ffffff",
+  green: "#6ca944",
+  grayC: "#cccccc",
+  imgColor: "#AD6B57"
+};
