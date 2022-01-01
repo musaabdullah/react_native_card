@@ -1,15 +1,5 @@
 import React, {Component} from 'react';
-import {Shadow} from 'react-native-shadow-2';
-import iumage from './first_change.jpg';
-import {
-  Card,
-  CardTitle,
-  CardContent,
-  CardAction,
-  CardButton,
-  CardImage,
-  AvatarSource,
-} from 'react-native-material-cards';
+import CardList from 'react-native-card-animated-modal';
 import {
   Text,
   TouchableHighlight,
@@ -22,46 +12,89 @@ import {
 import ButtonBuy from './ButtonBuy';
 import Cancel from './Cancel';
 import colors from './colors';
+
+const now = new Date();
+const CARDS = [
+  {
+    image: {
+      uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
+    },
+    title:
+      'Mollit reprehenderit ex aute pariatur proident laboris excepteur id esse. Deserunt nulla nulla laboris ipsum qui ipsum voluptate fugiat nisi eiusmod nisi fugiat voluptate. In ullamco enim laborum tempor do sint amet officia velit duis et. Labore commodo irure commodo aliquip irure cillum excepteur est laboris occaecat dolore et velit. Consequat deserunt aliquip dolor ad. Aliqua et adipisicing sunt voluptate ipsum magna magna fugiat officia tempor dolor velit.',
+    height: 300,
+    renderItem: ({item, index}) => (
+      <View style={{marginVertical: 15}}>
+        <Text
+          style={{
+            paddingHorizontal: 10,
+            fontWeight: 'bold',
+            fontSize: 15,
+            color: 'black',
+          }}>
+          Customizable Content
+        </Text>
+      </View>
+    ),
+  },
+
+  {
+    image: {
+      uri: 'http://www.gamespersecond.com/media/2011/07/battlefield-3-poster.jpg',
+    },
+    title:
+      'Mollit reprehenderit ex aute pariatur proident laboris excepteur id esse. Deserunt nulla nulla laboris ipsum qui ipsum voluptate fugiat nisi eiusmod nisi fugiat voluptate. In ullamco enim laborum tempor do sint amet officia velit duis et. Labore commodo irure commodo aliquip irure cillum excepteur est laboris occaecat dolore et velit. Consequat deserunt aliquip dolor ad. Aliqua et adipisicing sunt voluptate ipsum magna magna fugiat officia tempor dolor velit.',
+    height: 300,
+    renderItem: ({item, index}) => (
+      <View style={{marginVertical: 15}}>
+        <Text
+          style={{
+            paddingHorizontal: 10,
+            fontWeight: 'bold',
+            fontSize: 15,
+            color: 'black',
+          }}>
+          Image date
+        </Text>
+      </View>
+    ),
+  },
+];
 const App = () => {
   return (
-    <View style={styles.container}>
-      <View style={{width: '90%', height: 230}}>
-        <Card>
-          <CardTitle
-            avatarSource={require('./avater.jpg')}
-            subtitleAbove={false}
-            title="Title text"
-            subtitle="subtitle text"
-            style={{padding: 0, marginBottom: 0}}
-          />
-          <CardContent text="Your device will reboot in few seconds once successful, be patient meanwhile" />
-          <CardAction separator={true} inColumn={false}>
-            <CardButton
+    <CardList
+      listProps={{
+        ListHeaderComponent: () => (
+          <View style={{padding: 16, paddingBottom: 0}}>
+            <Text
               style={{
-                backgroundColor: colors.facebook,
-              }}
-              titleStyle={{
-                color: colors.white,
-                padding: 8,
-              }}
-              onPress={() => {}}
-              title="Push"
-            />
-            <CardButton
-              style={{
-                backgroundColor: colors.danger,
-              }}
-              titleStyle={{
-                color: colors.white,
-                padding: 8,
-              }}
-              onPress={() => {}}
-              title="Later"
-            />
-          </CardAction>
-        </Card>
-      </View>
-    </View>
+                fontSize: 13,
+                color: 'rgba(0, 0, 0, 0.5)',
+              }}>
+              {now.toDateString()}
+            </Text>
+            <Text style={{fontSize: 32, fontWeight: 'bold'}}>Featured</Text>
+          </View>
+        ),
+      }}
+      data={CARDS}
+      renderItem={({item, index}) => {
+        if (item.renderItem) return item.renderItem({item, index});
+
+        return (
+          <View>
+            <Text>Default Content</Text>
+          </View>
+        );
+      }}
+      renderDetails={({item, index}) => (
+        /* You can also provide custom content per item */
+        <View style={{paddingVertical: 30, paddingHorizontal: 16}}>
+          <Text style={{color: 'rgba(0, 0, 0, 0.7)', fontSize: 18}}>
+            {item.title}
+          </Text>
+        </View>
+      )}
+    />
   );
 };
 
