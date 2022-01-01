@@ -25,13 +25,8 @@ import colors from './colors';
 const App = () => {
   return (
     <View style={styles.container}>
-      <View style={{width: '90%', height: 330}}>
+      <View style={{width: '90%', height: 230}}>
         <Card>
-          <CardImage
-            style={{height: 400}}
-            source={{uri: 'http://placehold.it/480x270'}}
-            title="Above all i am here"
-          />
           <CardTitle
             avatarSource={require('./avater.jpg')}
             subtitleAbove={false}
