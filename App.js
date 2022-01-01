@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import ButtonBuy from './ButtonBuy';
+import Cancel from './Cancel';
 
 const App = () => {
   return (
@@ -89,7 +90,7 @@ const App = () => {
                 justifyContent: 'space-around',
                 marginTop: 18,
               }}>
-              <TouchableOpacity
+              {/* <TouchableOpacity
                 style={{
                   backgroundColor: '#db261e',
                   padding: 20,
@@ -101,8 +102,8 @@ const App = () => {
                   style={{fontWeight: 'bold', color: 'white', fontSize: 18}}>
                   Cancel
                 </Text>
-              </TouchableOpacity>
-
+              </TouchableOpacity> */}
+              <Cancel text="Cancel" />
               {/* <TouchableOpacity
                 style={{
                   backgroundColor: '#236bbe',
